@@ -8,6 +8,10 @@
     "build": "tsc",
     "test": "jest --testPathPattern=test/"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LorenzoBloedow/programming-colors"
+  },
   "keywords": [
     "programming",
     "colors",
