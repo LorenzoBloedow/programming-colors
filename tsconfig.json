@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "module": "ESNext",
+      "target": "es2015",
+      "declaration": true,
+      "declarationDir": "./dist/types",
+      "declarationMap": true,
+      "outDir": "./dist",
+      "moduleResolution": "Node"
+    },
+    "include": [
+      "src/*"
+    ]
+  }

@@ -1,0 +1,29 @@
+{
+  "name": "programming-colors",
+  "version": "1.0.0",
+  "description": "Programming language colors according to GitHub.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --testPathPattern=test/"
+  },
+  "keywords": [
+    "programming",
+    "colors",
+    "language"
+  ],
+  "author": "LorenzoBloedow",
+  "license": "MIT",
+  "files": [
+    "/dist"
+  ],
+  "devDependencies": {
+    "@babel/preset-env": "^7.19.4",
+    "@types/jest": "^29.2.1",
+    "babel-jest": "^29.2.2",
+    "jest": "^29.2.2",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.8.4"
+  }
+}
