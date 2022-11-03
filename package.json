@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "Programming language colors according to GitHub.",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "tsc",
