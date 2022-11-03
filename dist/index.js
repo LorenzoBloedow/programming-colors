@@ -1,18 +1,9 @@
-import languages from "./languages";
-import { hexToRGB, RGBToString, RGBToHSL } from "./converter";
+import languages from "./languages.js";
+import { hexToRGB, RGBToString, RGBToHSL } from "./converter.js";
+import telemetry from "./telemetry.js";
 export default function getProgrammingLangColor(programmingLanguage, format = "HEX", disableTelemetry = false) {
     if (!disableTelemetry) {
-        try {
-            fetch("https://api.lorenzobloedow.com/programming-colors/telemetry/sendUsage", {
-                method: "POST",
-                body: JSON.stringify({
-                    date: Date.now(),
-                    version: "1.0.0",
-                    programmingLanguage
-                })
-            });
-        }
-        catch (e) { }
+        telemetry(programmingLanguage, format);
     }
     const language = languages[programmingLanguage];
     if (!language || language.type !== "programming") {
