@@ -6,6 +6,8 @@ getProgrammingLangColor(programmingLanguage: Languages, format: ColorFormat);
 ```
 # Example
 ```
+import getProgrammingLangColor from "programming-colors";
+
 getProgrammingLangColor("JavaScript", "HEX");
 // Returns "#f1e05a"
 ```
